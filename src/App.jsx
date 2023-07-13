@@ -12,7 +12,7 @@ const setLocalStorage = (item) => {
 
 function App() {
   //defaultStorage
-  let defaultItems = JSON.parse(localStorage.getItem('list') || []);
+  let defaultItems = JSON.parse(localStorage.getItem('list') || '[]');
 
   //useState
   const [items, setItems] = useState(defaultItems);
